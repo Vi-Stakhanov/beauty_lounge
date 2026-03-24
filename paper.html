@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>paper</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+	
+	
+
+</head>
+<body>
+
+    
+    
+    <!-- HEADER
+    ================================= -->
+    <div class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="cols">
+                    <div class="col col_left show1200">
+                        <div class="items">
+                            <div class="item">
+                                <div class="burger"></div>
+                            </div>
+                            <div class="item">
+                                <div class="header-search btn-search-mob"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col_right">
+                        <div class="items">
+                            <div class="item hidd1200">
+                                <a class="header-search" href=""></a>
+                            </div>
+                            <div class="item">
+                                <a class="header-fav" href=""></a>
+                            </div>
+                            <div class="item">
+                                <a class="header-cart" href=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="">
+                        <img src="img/header/logo.svg" alt="">
+                    </a>
+                </div>
+            </div>            
+        </div>
+        <div class="header__bottom hidd1200">
+            <div class="container">
+                <div class="nav">
+                    <ul>
+                        <li><a href="">каталог</a>
+                            <div class="nav-drop">
+                                <div class="container">
+                                    <ul>
+                                        <li><a href="">новинки <i></i></a>
+                                            <ul>
+                                                <li><a href="">все товары категории</a></li>
+                                                <li><a href="">азия</a></li>
+                                                <li><a href="">макияж</a></li>
+                                                <li><a href="">уход</a></li>
+                                                <li><a href="">волосы</a></li>
+                                                <li><a href="">парфюмерия</a></li>
+                                                <li><a href="">натуральная косметика</a></li>
+                                                <li><a href="">для дома</a></li>
+                                                <li><a href="">украшения</a></li>
+                                                <li><a href="">бады и витамины</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">наша коллекция <i></i></a></li>
+                                        <li><a href="">новые бернды <i></i></a></li>
+                                        <li><a href="">макияж <i></i></a></li>
+                                        <li><a href="">для мужчин <i></i></a></li>
+                                        <li><a href="">уход <i></i></a></li>
+                                        <li><a href="">парфюмерия <i></i></a></li>
+                                        <li><a href="">волосы <i></i></a></li>
+                                        <li><a href="">азия <i></i></a></li>
+                                        <li><a href="">техника <i></i></a></li>
+                                        <li><a href="">для дома <i></i></a></li>
+                                        <li><a href="">украшения <i></i></a></li>
+                                        <li><a href="">одежда и аксессуары <i></i></a></li>
+                                        <li><a href="">продукты питания <i></i></a></li>
+                                        <li><a href="">здоровье <i></i></a></li>
+                                        <li><a href="">маникюр и педикюр <i></i></a></li>
+                                        <li><a href="">натуральная косметика <i></i></a></li>
+                                        <li><a href="">товары 18+ <i></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">бренды</a></li>
+                        <li><a href="">акции</a></li>
+                        <li><a href="">новинки</a></li>
+                        <li><a href="">салон</a></li>
+                        <li><a href="">блог</a></li>
+                        <li><a href="">подарочные сертификаты</a></li>
+                        <li><a href="">контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-mob">
+            <div class="nav-mob__level-1">
+                <ul>
+                    <li><a href="" class="open-1" data-openid_1="level-2_1">каталог <i></i></a></li>
+                    <li><a href="">бренды <i></i></a></li>
+                    <li><a href="">акции <i></i></a></li>
+                    <li><a href="">новинки <i></i></a></li>
+                    <li><a href="">салон <i></i></a></li>
+                    <li><a href="">блог <i></i></a></li>
+                    <li><a href="">подарочные сертификаты <i></i></a></li>
+                    <li><a href="">контакты <i></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-mob__level-2" id="level-2_1">
+                <div class="level-back level-back-1"><i></i> каталог</div>
+                <ul>
+                    <li><a href="" class="open-2" data-openid_2="level-3_1">новинки <i></i></a></li>
+                    <li><a href="">наша коллекция <i></i></a></li>
+                    <li><a href="">новые бернды <i></i></a></li>
+                    <li><a href="">макияж <i></i></a></li>
+                    <li><a href="">для мужчин <i></i></a></li>
+                    <li><a href="">уход <i></i></a></li>
+                    <li><a href="">парфюмерия <i></i></a></li>
+                    <li><a href="">волосы <i></i></a></li>
+                    <li><a href="">азия <i></i></a></li>
+                    <li><a href="">техника <i></i></a></li>
+                    <li><a href="">для дома <i></i></a></li>
+                    <li><a href="">украшения <i></i></a></li>
+                    <li><a href="">одежда и аксессуары <i></i></a></li>
+                    <li><a href="">продукты питания <i></i></a></li>
+                    <li><a href="">здоровье <i></i></a></li>
+                    <li><a href="">маникюр и педикюр <i></i></a></li>
+                    <li><a href="">натуральная косметика <i></i></a></li>
+                    <li><a href="">товары 18+ <i></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-mob__level-3" id="level-3_1">
+                <div class="level-back level-back-2"><i></i> новинки</div>
+                <ul>
+                    <li><a href="">все товары категории <i></i></a></li>
+                    <li><a href="">азия</a></li>
+                    <li><a href="">макияж</a></li>
+                    <li><a href="">уход</a></li>
+                    <li><a href="">волосы</a></li>
+                    <li><a href="">парфюмерия</a></li>
+                    <li><a href="">натуральная косметика</a></li>
+                    <li><a href="">для дома</a></li>
+                    <li><a href="">украшения</a></li>
+                    <li><a href="">бады и витамины</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-drop">
+            <form>
+                <input type="text" name="" placeholder="Поиск по сайту">
+                <button class="btn search-drop__btn"></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- CONTENT
+    ================================= -->
+    <div class="content">
+        <div class="content__top hidd1200">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="">блог</a></li>
+                        <li>статья</li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+        <div class="content__section">
+            <div class="container">
+                <div class="paper">
+                    <div class="paper__top">
+                        <div class="pic">
+                            <img src="img/paper/pic_1.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <h1 class="title"><span>#статья</span> 7 текстур, которые никогда<br> не выходят из моды</h1>
+                        </div>
+                    </div>
+                    <h2>Объем и сияние</h2>
+                    <p>Если цвет настроения — <span>розовый, причем не бледного оттенка</span>, а такого насыщенного, предлагаем протестировать плампер Dear Dahlia Allure Shine Lustrous Lip Plumper в цвете Temptation. Лично у редактора, который составлял эту подборку, он ассоциируется с эстетикой Пэрис Хилтон из нулевых, когда она часто появлялась в розовых нарядах (и с чихуахуа под мышкой).<br>
+                    Да, это не про скромные блестки, а про броское мерцание. С таким акцентом макияж будет заметен издалека, и не только за счет цвета и сияющего финиша. Благодаря маслу имбиря и экстрактам перца в составе средство работает как плампер, то есть визуально увеличивает губы. Также формула обогащена маслом какао, которое приятно увлажняет.<br>
+                    Для всех, кто опасается «песка» на губах, добавим, что сами сверкающие частицы (несмотря на то что их очень много) совсем не ощущаются.</p>
+                    <h2>Нюд с блестками</h2>
+                    <p>Думаем, любители легких нюдовых помад оценят MakeUp Revolution Metallic Muse Glitter Lipstick. У нее полупрозрачный розовый оттенок, который буквально сливается с естественным цветом губ. Но от классического нюда ее отличают как раз таки блестки. В отличие от предыдущей помады, здесь сияние деликатное, нежное.<br> 
+                    Что по ощущениям? Нет ни сухости, ни стянутости, ни липкости. Целый день ходишь с помадой и наслаждаешься своим минималистичным бьюти-образом (если, конечно, не отыграться на макияже глаз).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS
+    ================================= -->
+    <div class="section top-0">
+        <div class="container">
+            <div class="b-head">
+                <div class="cols">
+                    <div class="col">
+                        <h2 class="title-block">товары из подборки</h2>
+                    </div>
+                    <div class="col">
+                        <div class="arrow-append" id="arrows-append_1"></div>
+                    </div>
+                </div>
+            </div>            
+            <div class="products products-slider">
+                <div class="slider-wrap">
+                    <div class="products-slider-2">
+                        <div class="slide">
+                            <div class="item">
+                                <div class="in">
+                                    <div class="shild">
+                                        <div class="shild__item hit"></div>
+                                        <div class="shild__item flash"></div>
+                                        <div class="shild__item sale">60%</div>
+                                    </div>
+                                    <div class="btn btn-fav"></div>
+                                    <div class="pic">
+                                        <img src="img/products/pic_1.jpg" alt="">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="btn-products-add"></div>
+                                        <div class="sub">
+                                            <a href="">обновляющая сыворотка<br> для лица</a>
+                                        </div>
+                                        <div class="title">
+                                            <a href="">INFINIQUEpro niacinamide renewal serum</a>
+                                        </div>
+                                        <div class="price">1 863 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item">
+                                <div class="in">
+                                    <div class="shild">
+                                        <div class="shild__item hit"></div>                                        
+                                        <div class="shild__item sale">60%</div>
+                                    </div>
+                                    <div class="btn btn-fav"></div>
+                                    <div class="pic">
+                                        <img src="img/products/pic_1.jpg" alt="">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="btn-products-add"></div>
+                                        <div class="sub">
+                                            <a href="">обновляющая сыворотка<br> для лица</a>
+                                        </div>
+                                        <div class="title">
+                                            <a href="">INFINIQUEpro niacinamide renewal serum</a>
+                                        </div>
+                                        <div class="price">1 863 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item">
+                                <div class="in">
+                                    <div class="shild">
+                                        <div class="shild__item flash"></div>
+                                        <div class="shild__item sale">60%</div>
+                                    </div>
+                                    <div class="btn btn-fav"></div>
+                                    <div class="pic">
+                                        <img src="img/products/pic_1.jpg" alt="">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="btn-products-add"></div>
+                                        <div class="sub">
+                                            <a href="">обновляющая сыворотка<br> для лица</a>
+                                        </div>
+                                        <div class="title">
+                                            <a href="">INFINIQUEpro niacinamide renewal serum</a>
+                                        </div>
+                                        <div class="price">1 863 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item">
+                                <div class="in">
+                                    <div class="shild">
+                                        <div class="shild__item hit"></div>
+                                    </div>
+                                    <div class="btn btn-fav"></div>
+                                    <div class="pic">
+                                        <img src="img/products/pic_1.jpg" alt="">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="btn-products-add"></div>
+                                        <div class="sub">
+                                            <a href="">обновляющая сыворотка<br> для лица</a>
+                                        </div>
+                                        <div class="title">
+                                            <a href="">INFINIQUEpro niacinamide renewal serum</a>
+                                        </div>
+                                        <div class="price">1 863 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item">
+                                <div class="in">
+                                    <div class="shild">
+                                        <div class="shild__item hit"></div>
+                                        <div class="shild__item flash"></div>
+                                        <div class="shild__item sale">60%</div>
+                                    </div>
+                                    <div class="btn btn-fav"></div>
+                                    <div class="pic">
+                                        <img src="img/products/pic_1.jpg" alt="">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="btn-products-add"></div>
+                                        <div class="sub">
+                                            <a href="">обновляющая сыворотка<br> для лица</a>
+                                        </div>
+                                        <div class="title">
+                                            <a href="">INFINIQUEpro niacinamide renewal serum</a>
+                                        </div>
+                                        <div class="price">1 863 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER
+    ================================= -->
+    <div class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__cols">
+                    <div class="footer__left">
+                        <div class="logo">
+                            <a href="">
+                                <img src="img/footer/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="link-home">
+                            <a href="">Вернуться<br> на главную</a>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="cols">
+                            <div class="col">
+                                <div class="subtitle">о нас</div>
+                                <ul class="footer-nav">
+                                    <li><a href="">политика конфиденциальности</a></li>
+                                    <li><a href="">согласие на обработку<br> персональных данных</a></li>
+                                    <li><a href="">вакансии</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <div class="subtitle">клиентам</div>
+                                <ul class="footer-nav">
+                                    <li><a href="">заказы и доставка</a></li>
+                                    <li><a href="">возрат</a></li>
+                                    <li><a href="">бонусная программа</a></li>
+                                    <li><a href="">подарочные сертификаты</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <div class="subtitle">контакты</div>
+                                <div class="footer__contact">
+                                    <a href="">+7 (921) 441-11-88</a>
+                                </div>
+                                <div class="footer__contact">г. Санкт-Петербург, ул. Лахтинская, д. 14</div>
+                                <div class="soc">
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/vk.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/wh.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/tg.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/max.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="cols">
+                    <div class="col">
+                        <div class="logo-2">
+                            <a href="">
+                                <img src="img/footer/logo_2.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="copyright">© Copyright 2026, Beauty Lounge by Masson & Harebov. Powered By Jr.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+ 
+      
+  
+    
+    
+    <script src="libs/jquery-3.7.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>-->
+    <script src="libs/jquery.fancybox.js"></script>
+    <script src="libs/slick.min.js"></script> 
+    <script src="libs/jquery.maskedinput.js"></script>
+    <script src="js/common.js"></script>
+ 
+
+   
+    
+</body>
+</html>
