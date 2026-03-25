@@ -79,12 +79,12 @@
 
 	.products .slider-wrap,
 	.products.arrows-side .slider-wrap{
-		margin: 0 -9px;
+		margin: 0 -5px;
 	}
 
 	.products .item,
 	.products.arrows-side .item{
-		padding: 0 9px;
+		padding: 0 5px;
 	}
 
 	.products-slider{
@@ -166,6 +166,259 @@
 		padding-top: 0;
 	}
 
+	.back-mob{
+		display: block;
+	}
+
+	.page-head{
+		margin-top: 0;
+	}
+
+	.page-head .title{
+		font-size: 24px;
+	}
+
+	.cat .slider-wrap{
+		margin: 0 -5px;
+	}
+
+	.cat .item{
+		padding: 0 5px;
+	}
+
+	.cat-slider .slick-slider{
+		margin-right: -80px;
+	}
+
+	.cat .item .pic{
+		width: 52px;
+		height: 52px;
+	}
+
+	.panel__top{
+		padding-bottom: 14px;
+	}
+
+	.panel__sum{
+		font-size: 14px;
+	}
+
+	.btn-filter span{
+		display: none;
+	}
+
+	.btn-sorting span{
+		display: none;
+	}
+
+	.btn-filter i{
+		margin-right: 0;
+	}
+
+	.btn-sorting i{
+		margin-left: 0;
+		background-image: url(../img/icons/sorting.svg);
+	}
+
+	.panel{
+		padding-bottom: 24px;
+	}
+
+	.sorting{
+		margin: 0 -5px;
+	}
+
+	.sorting__item{
+		padding: 0 5px;
+	}
+
+	.sorting-drop{
+		overflow: hidden;
+	}
+
+	.sorting{
+		overflow: auto;
+	}
+
+	.select-wrap{
+		width: 130px;
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered{
+		padding-left: 15px;
+		padding-right: 26px;
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__arrow{
+		right: 10px;
+	}
+
+	.filter{
+		width: 100%;
+		height: 100%;
+		padding: 14px;
+		position: fixed;
+		overflow: auto;
+		border: none;
+	}
+
+	.filter__title{
+		font-size: 12px;
+	}
+
+	.filter__top{
+		padding-bottom: 20px;
+	}
+
+	.runner{
+		margin-bottom: 20px;
+	}
+
+	.acc__top{
+		font-size: 10px;
+	}
+
+	.acc__item{
+		margin-bottom: 8px;
+	}
+
+	.products .items{
+		margin: 0 -5px;
+	}
+
+	.products .slider-wrap{
+		margin: 0 -5px;
+	}
+
+	.add{
+		width: 225px;
+		padding: 8px;
+	}
+
+	.add .pic{
+		width: 65px;
+		height: 65px;
+	}
+
+	.add .right{
+		padding-left: 10px;
+	}
+
+	.comp{
+		margin-bottom: 5px;
+		font-size: 7px;
+	}
+
+	.comp i{
+		width: 12px;
+		height: 12px;
+		margin-right: 6px;
+		background-size: contain;
+	}
+
+	.add .title{
+		margin-bottom: 5px;
+		font-size: 10px;
+	}
+
+	.add p{
+		font-size: 7px;
+	}
+
+	.check label{
+		font-size: 12px;
+	}
+
+	.card__des{
+		display: none;
+	}
+
+	.card__mob{
+		display: block;
+	}
+
+	.card__par.mob{
+		display: flex;
+	}
+
+	.card__left{
+		width: 100%;
+	}
+
+	.card__right{
+		width: 100%;
+		padding-top: 18px;
+		padding-left: 0;
+	}
+
+	.card-slider__right .btn-fav{
+		display: none;
+	}
+
+	.card .title{
+		margin-bottom: 18px;
+	}
+
+	.card__price{
+		margin-bottom: 18px;
+	}
+
+	.card__price .t{
+		font-size: 16px;
+	}
+
+	.card__price .b{
+		font-size: 18px;
+	}
+
+	.credit{
+		font-size: 10px;
+	}
+
+	.card__line{
+		margin-bottom: 24px;
+	}
+
+	.card__par .item{
+		width: 36px;
+		height: 36px;
+	}
+
+	.btn-black{
+		min-height: 42px;
+	}
+
+	.gar__item{
+		font-size: 10px;
+	}
+
+	.gar{
+		padding-top: 18px;
+	}
+
+	.card{
+		padding-bottom: 14px;
+	}
+
+	.tabs__caption{
+		overflow: auto;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	.tabs__caption li{
+		padding-right: 20px;
+		white-space: nowrap;
+	}
+
+	.tabs__content{
+		padding-top: 20px;
+	}
+
+	.tabs__content h2{
+		font-size: 14px;
+	}
+
 }/**1200px**/
 
 @media only screen and (max-width : 1199px){
@@ -175,7 +428,9 @@
 		font-size: 20px;
 	}
 
-	.content p{
+	.content p,
+	.list li{
+		margin-bottom: 14px;
 		font-size: 10px;
 	}
 
@@ -328,6 +583,18 @@
 		font-size: 10px;
 	}
 
+	.products .items .item{
+		width: 33.33%;
+	}
+
+	.products .item .btn-fav{
+		top: 3px;
+		right: 3px;
+	}
+
+
+
+
 }/**1199px**/
 
 @media only screen and (max-width : 992px){
@@ -396,6 +663,10 @@
 
 	.products .item .pic{
 		height: 200px;
+	}
+
+	.products .items .item .pic{
+		height: 160px;
 	}
 
 	.products .item .bottom{
@@ -474,10 +745,28 @@
 		color: #fff;
 	}
 
+	.products .items .item{
+		width: 50%;
+	}
+
+	.card-slider__left{
+		display: none;
+	}
+
+	.card-slider__right{
+		width: 100%;
+	}
+
+	.card-slider__right .pic{
+		height: 450px;
+	}
+
 }/**767px**/
 
 @media only screen and (max-width : 576px){
-	
+	.card-slider__right .pic{
+		height: 380px;
+	}
 }/**576px**/
 
 @media only screen and (max-width : 575px){
@@ -499,13 +788,17 @@
 }/**425px**/
 
 @media only screen and (max-width : 375px){
-	
+	.card-slider__right .pic{
+		height: 320px;
+	}
 }/**375px**/
 
 @media only screen and (max-width : 360px){
 	.accii .item .pic{
 		height: 180px;
 	}
+
+
 }/**360px**/
 
 @media only screen and (max-width : 320px){
