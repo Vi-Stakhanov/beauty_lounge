@@ -69,6 +69,10 @@ body.no-scroll{
     color: #717680;
 }
 
+.label span{
+    color: #710000;
+}
+
 .form-group{
     margin-bottom: 24px;
 }
@@ -171,6 +175,55 @@ textarea:focus{
     opacity: .888;
 }
 
+.btn-gray{
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 30px;
+    background: #e9eaeb;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.btn-gray:hover,
+.btn-gray:active{
+    opacity: .888;
+}
+
+.btn-border{
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 30px;
+    background: #fff;
+    border: 1px solid #000;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.btn-border:hover,
+.btn-border:active{
+    opacity: .888;
+}
+
+.btn-border .arrow-red{
+    width: 22px;
+    height: 22px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 12px;
+    background: url(../img/icons/ar-red.svg) center no-repeat;
+}
 
 button:focus{
     outline: none;
@@ -506,7 +559,7 @@ button:focus{
     display: block;
     padding: 3px 0 25px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
     position: relative;
@@ -582,7 +635,7 @@ button:focus{
     justify-content: space-between;
     padding: 3px 0;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
     transition: .3s;
@@ -909,6 +962,10 @@ button:focus{
     margin-bottom: 20px;
 }
 
+.search .products .item{
+    width: 50%!important;
+}
+
 .products .item .in{
     background: #fff;
     position: relative;
@@ -1017,7 +1074,7 @@ button:focus{
     min-height: 34px;
     margin-bottom: 10px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
     position: relative;
@@ -1195,7 +1252,7 @@ button:focus{
 .content p{
     margin-bottom: 24px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
 }
@@ -1291,7 +1348,7 @@ button:focus{
     align-items: center;
     margin-bottom: 12px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
 }
@@ -1392,7 +1449,7 @@ button:focus{
 .abc .item ul li{
     margin-bottom: 12px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
 }
@@ -1656,7 +1713,7 @@ body .title-big{
 .inter .sub{
     margin-bottom: 32px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     text-align: center;
     color: #717680;
@@ -1665,14 +1722,14 @@ body .title-big{
 .inter .fote{
     padding-top: 30px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     color: #717680;
     text-align: center;
 }
 
 .inter .fote a{
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: underline;
     color: #000;
 }
@@ -1868,7 +1925,7 @@ body .title-big{
     display: inline-flex;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
     cursor: pointer;
@@ -2043,7 +2100,7 @@ body .title-big{
     display: inline-flex;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
     cursor: pointer;
@@ -2519,7 +2576,7 @@ body .title-big{
     display: block;
     margin-bottom: 10px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
 }
 
@@ -2580,7 +2637,7 @@ body .title-big{
 .card__price .b{
     padding-top: 6px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
 }
@@ -2637,7 +2694,7 @@ body .title-big{
     align-items: center;
     margin-bottom: 16px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
 }
@@ -2742,7 +2799,7 @@ body .title-big{
 
 .art{
     margin-bottom: 24px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #717680;
 }
@@ -2754,9 +2811,287 @@ body .title-big{
 .list li{
     margin-bottom: 22px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000;
+}
+
+.cart{
+
+}
+
+.cart .tit{
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.cart-top{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cart-top__left{
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.cart-top__right{
+    width: calc(100% - 260px);
+    padding-left: 60px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.cart-top .pic{
+    height: 260px;
+}
+
+.cart-top .pic img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cart-top .title{
+    margin-bottom: 22px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.cart-top .title span{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.btn-del{
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: url(../img/header/burger_close.svg) center no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.quantity{
+    width: 140px;
+    height: 54px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 100px;
+    border: 1px solid #e9eaeb;
+    line-height: 1;
+}
+
+.btn-quantity{
+    width: 30px;
+    height: 30px;
+    display: block;
+    flex-shrink: 0;
+    padding: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.btn-minus{
+    background-image: url(../img/icons/minus_red.svg);
+}
+
+.btn-plus{    
+    background-image: url(../img/icons/plus_red.svg);
+}
+
+.quantity input{
+    width: 45px;
+    height: 100%;
+    border: none;
+    padding: 0;
+    margin: 0 4px;
+    text-align: center;
+    border-radius: 0;
+    background: transparent;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+.promocode{
+    position: relative;
+}
+
+.promocode input::-webkit-input-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.promocode input:-moz-placeholder {
+    color: #000;
+    opacity: 1;
+}
+.promocode input::-moz-placeholder {
+    color: #000;
+    opacity: 1;
+}
+.promocode input:-ms-input-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.promocode input{
+    height: 74px;
+    padding-left: 24px;
+    padding-right: 60px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px dashed #000;
+    background: #fff;
+    border-radius: 0;
+}
+
+.promocode__btn{
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: url(../img/icons/arrow-right-circle.svg) center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    z-index: 3;
+    transform: translateY(-50%);
+}
+
+.total{
+
+}
+
+.total .cols{
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total .sub{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.total .card__price{
+    margin-bottom: 0;
+}
+
+.cart .subtit{
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.cart .text{
+    margin-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.cart__inter{
+    padding-bottom: 30px;
+}
+
+.cart__inter .btn{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.order__item{
+    margin-bottom: 50px;
+}
+
+.order__item .label{
+    margin-bottom: 8px;
+}
+
+ .form-group{
+    margin-bottom: 12px;
+}
+
+.order__input{
+    height: 28px!important;
+    padding: 0!important;
+    border: none!important;
+    border-bottom: 1px solid #000!important;
+    background: transparent!important;
+    border-radius: 0!important;
+}
+
+.order__check{
+    
+}
+
+.order__check label{
+    display: flex;
+    align-items: center;
+    padding: 20px 12px;
+    border: 1px solid #717680;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.order__check label > input[type="checkbox"],
+.order__check label > input[type="radio"]{
+    display: none;
+}
+
+.order__check label > i{
+    width: 22px;
+    height: 22px;
+    display: block;
+    flex-shrink: 0;
+    background: url(../img/icons/check-2.svg) no-repeat;
+    margin-right: 12px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.order__check label > input[type="checkbox"]:checked + i,
+.order__check label > input[type="radio"]:checked + i{
+    background: url(../img/icons/checked-2.svg) no-repeat;
+}
+
+.order__check label span span{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #717680;
 }
 
 /**FOOTER**/
@@ -2832,7 +3167,7 @@ body .title-big{
 .footer-nav li{
     margin-bottom: 16px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #fafafa;
 }
@@ -2845,7 +3180,7 @@ body .title-big{
 .footer__contact{
     margin-bottom: 16px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     color: #fff;
 }
