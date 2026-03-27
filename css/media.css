@@ -47,7 +47,7 @@
 	}
 
 	.story{
-		margin-right: -15px;
+		margin-right: -10px;
 		overflow: hidden;
 	}
 
@@ -88,7 +88,7 @@
 	}
 
 	.products-slider{
-		margin-right: -15px;
+		margin-right: -10px;
 		overflow: hidden;
 	}	
 
@@ -106,11 +106,11 @@
 	}
 
 	.accii .slider-wrap{
-		margin: 0 -15px;
+		margin: 0 -10px;
 	}
 
 	.accii .item{
-		padding: 0 15px;
+		padding: 0 10px;
 	}
 
 	.content{
@@ -147,7 +147,7 @@
 
 	.sort{
 		padding-bottom: 18px;
-		margin-right: -15px;
+		margin-right: -10px;
 	}
 
 	.sort__item{
@@ -507,6 +507,27 @@
 
 	.flex-bot{
 		padding-top: 20px;
+	}
+
+	.container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cols{
+		margin: 0 -10px;
+	}
+
+	.col{
+		padding: 0 10px;
+	}
+
+	.abc .items{
+		margin: 0 -10px;
+	}
+
+	.abc .item{
+		padding: 0 10px;
 	}
 
 }/**1200px**/
