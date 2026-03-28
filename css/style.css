@@ -150,9 +150,12 @@ textarea:focus{
     text-align: center;
 }
 
-.btn-black:hover,
+.btn-black:hover{
+    background: #998865;
+}
+
 .btn-black:active{
-    opacity: .888;
+    background: #998865;
 }
 
 .btn-red{
@@ -226,6 +229,24 @@ textarea:focus{
     background: url(../img/icons/ar-red.svg) center no-repeat;
 }
 
+.ar-right-white{
+     width: 22px;
+    height: 22px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 12px;
+    background: url(../img/action/ar-white.svg) center no-repeat;   
+}
+
+.ar-right-black{
+     width: 22px;
+    height: 22px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 12px;
+    background: url(../img/icons/right.svg) center no-repeat;   
+}
+
 button:focus{
     outline: none;
 }
@@ -269,8 +290,12 @@ button:focus{
 }
 
 .rect-dots .slick-dots{
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     gap: 28px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .rect-dots .slick-dots li{
@@ -281,12 +306,26 @@ button:focus{
 .rect-dots .slick-dots li button{
     width: 100%;
     height: 2px;
-    background: #e9eaeb;
+    background: #e9eaeb!important;
+    border: none;
 }
 
 .rect-dots .slick-dots li.slick-active button{
-    background-color: #000; /* Цвет активной точки/заполнения */
+    background: #e9eaeb!important;
+    border: none;
+}
+
+.rect-dots .slick-dots li.slick-active button::after{
+    content: "";
+
+    height: 100%;
+    display: block;
+    background-color: #000!important; /* Цвет активной точки/заполнения */
     animation: progressBar 4s linear forwards; /* 4s - время анимации */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 @keyframes progressBar{
@@ -556,7 +595,25 @@ button:focus{
     cursor: pointer;
 }
 
+.header__place{
+    padding-left: 30px;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000;
+}
 
+.header__place:before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url(../img/header/place.svg) center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
 
 .header__bottom{
     padding-top: 5px;
@@ -709,14 +766,21 @@ button:focus{
     background-image: url(../img/header/burger_close.svg);
 }
 
-.nav-mob{
-    width: 225px;
+.menu-mob{
+    width: 100%;
+    display: none;
+    padding-bottom: 25px;
     background: #fff;
     position: absolute;
+    overflow: auto;
     top: 100%;
     left: 0;
     z-index: 5;
-    display: none;
+}
+
+.nav-mob{
+    border-bottom: 1px solid #e9eaeb;
+
 }
 
 .nav-mob ul{
@@ -821,6 +885,47 @@ button:focus{
     transform: translateY(-50%);
 }
 
+.menu-mob .bottom{
+    padding: 20px 10px 0;
+}
+
+.menu-mob .sub{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.user{
+
+}
+
+.user a{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.user i{
+    width: 22px;
+    height: 22px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 8px;
+    background: url(../img/header/user.svg) center no-repeat;
+}
+
+.user__btn{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
 /**INTRO**/
 .intro{
     width: 100%;
@@ -860,8 +965,12 @@ button:focus{
     z-index: 3;
 }
 
+.intro .item{
+    position: relative;
+}
+
 .intro .in{
-    height: 408px;
+    height: 488px;
     display: flex;
     align-items: center;
 }
@@ -876,6 +985,22 @@ button:focus{
     font-size: 60px;
     line-height: 1.1;
     color: #000;
+}
+
+.intro .title span{
+    display: inline-block;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.intro .title span:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .intro p{
@@ -3313,9 +3438,91 @@ body .title-big{
 .action{
     width: 100%;
     display: block;
-    background: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #B1CD8C url(../img/action/pic_1.jpg) center no-repeat;
+    background-size: cover;
     position: relative;
     z-index: 1;
+}
+
+.action .border{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #fff;
+}
+
+.action .in{
+    max-width: 685px;
+    margin: 0 auto;
+}
+
+.action .title-block{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.action ul{
+    list-style: none;
+    padding-bottom: 40px;
+}
+
+.action ul li{
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.action__form{
+    margin-bottom: 24px;
+}
+
+.action__form .flex{
+    display: flex;
+}
+
+.action__form input{
+    height: 42px;
+    flex-grow: 1;
+    border: 1px solid #717680;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #717680;
+}
+
+.action__form .btn{
+    width: 235px;
+    min-height: 42px;
+    flex-shrink: 0;
+}
+
+.agree{
+    padding-left: 40px;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.agree:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../img/action/check.svg) center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.agree a{
+    color: inherit;
+    text-decoration: underline;
 }
 
 
