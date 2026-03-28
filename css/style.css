@@ -268,6 +268,32 @@ button:focus{
     border-color: #710000;
 }
 
+.rect-dots .slick-dots{
+    display: flex;
+    gap: 28px;
+}
+
+.rect-dots .slick-dots li{
+    margin: 0!important;
+    flex-grow: 1;
+}
+
+.rect-dots .slick-dots li button{
+    width: 100%;
+    height: 2px;
+    background: #e9eaeb;
+}
+
+.rect-dots .slick-dots li.slick-active button{
+    background-color: #000; /* Цвет активной точки/заполнения */
+    animation: progressBar 4s linear forwards; /* 4s - время анимации */
+}
+
+@keyframes progressBar{
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
 .slick-prev, 
 .slick-next{
     width: 22px;
@@ -3106,44 +3132,21 @@ body .title-big{
     z-index: 1;
 }
 
-.footer__top{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.footer__cols{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer__left{
-    padding-right: 30px;
-}
-
-.footer__right{
-    flex-basis: 870px;
-}
-
 .footer .logo{
-    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
 }
 
 .footer .logo img{
-    width: 60px;
-    display: block;
+    width: 140px;
 }
 
-.link-home{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2;
-    color: #fff;
-}
-
-.link-home a{
-    color: inherit;
-    text-decoration: underline;
+.footer__top{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    position: relative;
+    z-index: 1;
 }
 
 .footer__top .cols{
@@ -3151,16 +3154,27 @@ body .title-big{
     justify-content: space-between;
 }
 
+.footer__top .col{
+    
+}
+
+.footer__top .col .border{
+    height: 100%;
+    padding-left: 70px;
+    border-left: 1px solid rgb(113 118 128 / 51%);
+}
+
+.footer__top .col:first-child{
+    border: none;
+}
+
 .footer .subtitle{
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     color: #fff;
-}
-
-.footer .subtitle a{
-    color: inherit;
+    pointer-events: none;
 }
 
 .footer-nav{
@@ -3168,11 +3182,11 @@ body .title-big{
 }
 
 .footer-nav li{
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
-    color: #fafafa;
+    color: #fff;
 }
 
 .footer-nav li a{
@@ -3180,16 +3194,56 @@ body .title-big{
     transition: .3s;
 }
 
-.footer__contact{
-    margin-bottom: 16px;
+.footer-nav li a:hover{
+    color: #717680;
+}
+
+.footer__top p{
+    margin-bottom: 18px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
     color: #fff;
 }
 
-.footer__contact a{
+.pay{
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+}
+
+.pay__item{
+    padding: 0 10px;
+}
+
+.pay__item img{
+    max-width: 100%;
+    display: block;
+}
+
+.footer__contacts{
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.footer__contacts a{
+    display: flex;
+    align-items: center;
     color: inherit;
+}
+
+.footer__contacts .wh-1{
+    width: 12px;
+    height: 12px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 5px;
+    background: url(../img/footer/wh_1.svg) center no-repeat;
 }
 
 .soc{
@@ -3208,36 +3262,60 @@ body .title-big{
     display: block;
 }
 
+.footer .max-w{
+    max-width: 260px;
+}
+
 .footer__bottom{
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
-    border-top: 1px solid #717680;
 }
 
 .footer__bottom .cols{
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: space-between;
 }
 
-.footer .logo-2{
-
+.footer__bottom .col{
+    position: relative;
 }
 
-.footer .logo-2 img{
-    width: 122px;
-    display: block;
+.footer__bottom .col:before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: rgb(113 118 128 / 51%);
+    position: absolute;
+    top: 0;
+    left: -70px;
 }
 
-.copyright{
+.footer__bottom .col:first-child:before{
+    display: none;
+}
+
+.footer__bottom p{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
-    color: #fff;
+    color: #717680;
+}
+
+.footer__bottom p a{
+    color: inherit;
 }
 
 .show1200{
     display: none!important;
+}
+
+/**ACTION**/
+.action{
+    width: 100%;
+    display: block;
+    background: #000;
+    position: relative;
+    z-index: 1;
 }
 
 
