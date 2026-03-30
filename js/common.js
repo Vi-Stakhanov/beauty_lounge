@@ -82,7 +82,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             $('.add').fadeOut(); 
-        }, 2000);
+        }, 5000);
     });
 
     $('.footer .subtitle').click(function(){
@@ -335,6 +335,15 @@ $(document).ready(function() {
         focusOnSelect: true,
         vertical: true
     });
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 10) {
+            $('.sline').addClass('sticky');
+        }
+        else {
+            $('.sline').removeClass('sticky');
+        }
+    }); 
 
     $('.acc__top').on('click', function (e) {
         var $this = $(this);

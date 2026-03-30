@@ -299,6 +299,8 @@
 	.add{
 		width: 225px;
 		padding: 8px;
+		right: 10px;
+		transform: none;
 	}
 
 	.add .pic{
@@ -706,6 +708,7 @@
 	.rect-dots .slick-dots{
 		max-width: 200px;
 		gap: 4px;
+		bottom: 25px;
 	}
 
 	.intro .pic_des{
@@ -752,6 +755,7 @@
 
 	.progress-dots .slick-dots{
 		width: calc(100% - 20px);
+		bottom: 25px;
 	}
 
 	.accii-top{

@@ -296,6 +296,7 @@ button:focus{
     gap: 28px;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 25px;
 }
 
 .rect-dots .slick-dots li{
@@ -339,6 +340,7 @@ button:focus{
     /*gap: 28px;*/
     left: 50%;
     transform: translateX(-50%);
+    bottom: 25px;
 }
 
 .progress-dots .slick-dots li{
@@ -601,7 +603,7 @@ button:focus{
 }
 
 .header .logo img{
-    width: 142px;
+    width: 200px;
     display: block;
 }
 
@@ -661,8 +663,8 @@ button:focus{
     text-align: center;
     color: #fff;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -1px;
 }
 
 .header__place{
@@ -1140,7 +1142,14 @@ button:focus{
     padding-bottom: 4px;
     background: #000;
     position: relative;
-    z-index: 1;
+    bottom: 0;
+    z-index: 10;
+    
+}
+
+.sline.sticky{
+    position: fixed;
+    bottom: 0;
 }
 
 .sline p{
@@ -2668,10 +2677,11 @@ body .title-big{
     display: none;
     background: #000;
     padding: 14px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    position: absolute;
+    top: 55px;
+    right: 50%;
     z-index: 14;
+    transform: translateX(585px);
 }
 
 .add .in{
