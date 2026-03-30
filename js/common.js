@@ -73,6 +73,7 @@ $(document).ready(function() {
     $('.btn-filter, .filter-close').click(function(){
         $(this).toggleClass('active');
         $('.filter').toggleClass('active');
+        $('.header').toggle();
 
     });
 
