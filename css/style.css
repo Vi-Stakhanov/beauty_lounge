@@ -577,8 +577,8 @@ button:focus{
 
 .header__top{
     min-height: 66px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -1123,6 +1123,7 @@ button:focus{
     display: block;
     object-fit: cover;
     object-position: center;
+    border-radius: 100%;
 }
 
 .story .item .title{
