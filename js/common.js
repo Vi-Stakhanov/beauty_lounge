@@ -27,7 +27,6 @@ $(document).ready(function() {
     $('.burger').click(function(){
         $(this).toggleClass('active');
         $('.menu-mob').toggle();
-        $('.sorting-drop').toggleClass('header');
     });
 
     //$('.nav-mob .open-1').click(function() {
