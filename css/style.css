@@ -30,6 +30,9 @@
     -moz-box-sizing: border-box;
 }
 
+html{
+    scrollbar-gutter: stable;
+}
 
 body{
     width: 100%;
@@ -500,7 +503,8 @@ button:focus{
     color: #000;
 }
 
-.go-to a{
+.go-to a,
+.go-to span{
     display: inline-flex;
     align-items: center;
     color: inherit;
@@ -925,44 +929,6 @@ button:focus{
     flex-shrink: 0;
     margin-right: 6px;
     background: url(../img/icons/ch_left.svg) center no-repeat;
-}
-
-.search-drop{
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 3;
-    display: none;
-}
-
-.search-drop input{
-    width: 100%;
-    height: 28px;
-    padding: 0 30px 0 0;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    color: #000;
-    box-shadow: none;
-}
-
-.search-drop__btn{
-    width: 22px;
-    height: 22px;
-    display: block;
-    background: transparent url(../img/header/lup.svg) center no-repeat;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    z-index: 3;
-    transform: translateY(-50%);
 }
 
 .menu-mob .bottom{
@@ -1572,6 +1538,48 @@ button:focus{
     color: inherit;
 }
 
+.search-drop{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    padding: 20px 0 160px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: absolute;
+    overflow: auto;
+    scrollbar-gutter: stable;
+    top: 134px;
+    left: 0;
+    z-index: 3;
+   
+}
+
+/*.search-drop input{
+    width: 100%;
+    height: 28px;
+    padding: 0 30px 0 0;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000;
+    box-shadow: none;
+}
+
+.search-drop__btn{
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: transparent url(../img/header/lup.svg) center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 3;
+    transform: translateY(-50%);
+}*/
+
 /**SEARCH**/
 .search{
 
@@ -1585,12 +1593,16 @@ button:focus{
 .search__left{
     width: calc(100% - 590px);
     padding-right: 30px;
+
 }
 
 .search__right{
     width: 590px;
     flex-shrink: 0;
+    
 }
+
+
 
 .search__input{
     margin-bottom: 60px;
@@ -1653,7 +1665,7 @@ button:focus{
 }
 
 .search-results{
-
+    margin-bottom: 26px;
 }
 
 .search-results__item{
@@ -1664,6 +1676,10 @@ button:focus{
     font-size: 16px;
     line-height: 1.2;
     color: #000;
+}
+
+.search-results__item span{
+    font-weight: 600;
 }
 
 .search-results__item a{
@@ -1680,6 +1696,8 @@ button:focus{
     margin-right: 12px;
     background: url(../img/icons/time.svg) center no-repeat;
 }
+
+
 
 /**BRANDS**/
 .brands{
@@ -3831,6 +3849,223 @@ body .title-big{
     visibility: hidden;
     z-index: -999;
     pointer-events: none;
+}
+
+.btn-share{
+    cursor: pointer;
+}
+
+.share{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 16;
+}
+
+.share .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.share .in{
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    overflow: auto;
+    margin-left: auto;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.share__top{
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.share__top .pic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.share__top .pic img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.share__top .front{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 3;
+}
+
+.share__top .title{
+    width: 100%;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.share__body{
+    padding: 30px 40px;
+}
+
+.share .sub{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.share__title{
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    color: #000;
+}
+
+.share p{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.share p.gold{
+    margin-bottom: 0;
+    padding-top: 14px;
+    color: #998865;
+}
+
+.share-step{
+    padding-bottom: 30px;
+}
+
+.share-step__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.share-step__item .num{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.share-step__item .num_1{   
+    background-image: url(../img/share/num_1.svg);
+}
+.share-step__item .num_2{   
+    background-image: url(../img/share/num_2.svg);
+}
+.share-step__item .num_3{   
+    background-image: url(../img/share/num_3.svg);
+}
+.share-step__item .num_4{   
+    background-image: url(../img/share/num_4.svg);
+}
+
+.share-step__item .right{
+    padding-left: 32px;
+}
+
+.share-step__title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.share-step__title span{
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.sub-arrow{
+    padding-left: 42px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.sub-arrow:before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: url(../img/icons/ch_right.svg) center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.share__bottom{
+    padding-top: 20px;
+}
+
+.share__bottom p{
+    margin-bottom: 18px;
+}
+
+.share-variant{
+    padding-left: 18px;
+}
+
+.share-variant__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    
+}
+
+.share-variant__item p{
+    margin-bottom: 0;
+}
+
+.share-variant__item img{
+    width: 22px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 10px;
 }
 
 
