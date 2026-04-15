@@ -15,13 +15,24 @@ $(document).ready(function() {
         minimumResultsForSearch: -1
     });
 
+    $('.btn-share').on('click', function() {
+        $('.share').fadeIn(200);  
+        $('body, html').addClass('no-scroll');
+    });
+
+    $('.share .overlay').on('click', function() {
+        $('.share').fadeOut(200); 
+        $('body, html').removeClass('no-scroll');
+    });
+
 	$('.btn-fav').click(function() {
         $(this).toggleClass('active');
     });
 
-    $('.btn-search-mob').click(function(){
+    $('.btn-search-mob, .btn-search').click(function(){
         $(this).toggleClass('active');
-        $('.search-drop').toggle();
+        $('.search-drop').slideToggle();
+        $('body, html').toggleClass('no-scroll');
     });
 
     $('.burger').click(function(){
